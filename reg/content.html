@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+nav conteent vertically
+</title>
+<style>
+.dropbtn{
+background-color:#4CAF50;
+color:white;
+padding:16px;
+border:none;
+curser:pointer;
+}
+.drop_down{
+position:relative;
+display:inline-block;
+}
+.dropdowncontent{
+background-color:#f9f9f9;
+boxshadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+position:absolute;
+min-width:160px;
+display:none;
+right:0;
+}
+.dropdowncontent a{
+text-decoration:none;
+padding:12px 16px;
+display:block;
+color:black;
+}
+.dropdowncontent a:hover{
+background-color:#f1f1f1;
+
+}
+.drop_down:hover .dropdowncontent {
+  display: block;
+}
+.drop_down:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div clas="drop_down">
+<button class="dropbtn">login</button>
+<div class="dropdowncontent">
+ <a href="">link 1</a>
+<a href="">link2</a>
+<a href="">link3</a>
+</div>
+</div>
+</body>
+</html>
